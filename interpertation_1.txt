@@ -1,0 +1,162 @@
+FRAM Model Interpreter - FMI COCOM (December 2021)  -----  (c) Erik Hollnagel, 2021
+FMI session log: 10/27/24
+Entry function <environmental conditions>
+Entry function <human operator pilot adversarial drone>
+Entry function <Train operations management>
+Exit function <Passenger Safe arrival to destination >
+BG function <Relay GPS / mobile network> is ACTIVE
+BG function <Crossing through road traffic> is ACTIVE
+List of model Input aspects
+10	Monitor track zone surveillance	0	NIL
+2	Dispatch train	0	NIL
+0	Train track zone location	0	ACTIVE
+0	Adversarial mission target	0	ACTIVE
+6	Passing through track zone	0	NIL
+11	Alert police force	0	NIL
+4	Dispatch police officers	0	NIL
+7	Safe transport of people	0	NIL
+13	Train Schedule Management	0	ACTIVE
+13	Communication with Train Operators	0	ACTIVE
+10	Trigger surveillance alert	0	NIL
+0	Permissible weather conditions	0	ACTIVE
+2	Permissible weather conditions	0	ACTIVE
+13	Permissible weather conditions	0	ACTIVE
+
+List of model Precondition aspects
+6	adequate fencing	0	NIL
+0	Capable adversarial perception model	0	ACTIVE
+
+List of model Resource aspects
+0	GPS signal	0	ACTIVE
+0	Provide mobile network	0	ACTIVE
+6	Secure train track zone	0	NIL
+
+List of model Time aspects
+2	Scheduled train passage time	0	NIL
+
+List of model Control aspects
+2	Guide train driver	0	NIL
+13	Alert unauthorised access	0	NIL
+0	Pilot adversarial drone	0	ACTIVE
+6	Roam train track zone	0	NIL
+0	Capture adversarial drone	0	NIL
+11	Permissible road traffic	0	ACTIVE
+10	Police monitor track zone surveillance	0	NIL
+2	Miss train collision	0	NIL
+0	Detect adversarial drone	0	NIL
+
+Status before cycle 1
+Status of functions
+0	Adversarial Drone Approach Train	FG	WAITING	STRA
+1	Relay GPS / mobile network	BG	ACTIVE	STRA	CON
+2	Train Transit People and Goods	FG	WAITING	STRA
+3	environmental conditions	BG Entry	ACTIVE	STRA	FTO
+4	Police Officer Chase Adversarial Drone	FG	WAITING	STRA
+5	Crossing through road traffic	BG	ACTIVE	STRA	CON
+6	Train Track Zone Facilitating Safe Passage for Trains	FG	WAITING	STRA
+7	Passenger Safe arrival to destination 	BG Exit	WAITING	STRA
+8	human operator pilot adversarial drone	BG Entry	ACTIVE	STRA	FTO
+10	Monitoring track zone surveillance	FG	WAITING	STRA
+11	police force dispatch response	FG	WAITING	STRA
+13	Train traffic controller	FG	WAITING	STRA
+14	Train operations management	BG Entry	ACTIVE	STRA	FTO
+
+Value of Outputs
+13	Scheduled train passage time	0	NIL	NIL	NIL
+13	Guide train driver	0	NIL	NIL	NIL
+13	adequate fencing	0	NIL	NIL	NIL
+13	Monitor track zone surveillance	0	NIL	NIL	NIL
+13	Dispatch train	0	NIL	NIL	NIL
+10	Alert unauthorised access	0	NIL	NIL	NIL
+8	Pilot adversarial drone	0	ACTIVE	BG	BG
+8	Capable adversarial perception model	0	ACTIVE	BG	BG
+8	Train track zone location	0	ACTIVE	BG	BG
+8	Adversarial mission target	0	ACTIVE	BG	BG
+3	Permissible weather conditions	0	ACTIVE	BG	BG
+1	GPS signal	0	ACTIVE	BG	BG
+1	Provide mobile network	0	ACTIVE	BG	BG
+0	Roam train track zone	0	NIL	NIL	NIL
+2	Passing through track zone	0	NIL	NIL	NIL
+10	Passing through track zone	0	NIL	NIL	NIL
+13	Alert police force	0	NIL	NIL	NIL
+11	Dispatch police officers	0	NIL	NIL	NIL
+4	Capture adversarial drone	0	NIL	NIL	NIL
+5	Permissible road traffic	0	ACTIVE	BG	BG
+6	Safe transport of people	0	NIL	NIL	NIL
+4	Secure train track zone	0	NIL	NIL	NIL
+11	Police monitor track zone surveillance	0	NIL	NIL	NIL
+14	Train Schedule Management	0	ACTIVE	BG	BG
+14	Communication with Train Operators	0	ACTIVE	BG	BG
+0	Miss train collision	0	NIL	NIL	NIL
+0	Trigger surveillance alert	0	NIL	NIL	NIL
+10	Detect adversarial drone	0	NIL	NIL	NIL
+
+
+BEGIN cycle 1
+Status of model functions
+0	Adversarial Drone Approach Train	FG	WAITING	STRA
+1	Relay GPS / mobile network	BG	ACTIVE	STRA	CON
+2	Train Transit People and Goods	FG	WAITING	STRA
+3	environmental conditions	BG Entry	ACTIVE	STRA	FTO
+4	Police Officer Chase Adversarial Drone	FG	WAITING	STRA
+5	Crossing through road traffic	BG	ACTIVE	STRA	CON
+6	Train Track Zone Facilitating Safe Passage for Trains	FG	WAITING	STRA
+7	Passenger Safe arrival to destination 	BG Exit	WAITING	STRA
+8	human operator pilot adversarial drone	BG Entry	ACTIVE	STRA	FTO
+10	Monitoring track zone surveillance	FG	WAITING	STRA
+11	police force dispatch response	FG	WAITING	STRA
+13	Train traffic controller	FG	WAITING	STRA
+14	Train operations management	BG Entry	ACTIVE	STRA	FTO
+Value of model Outputs
+13	Scheduled train passage time	0	NIL	NIL	NIL
+13	Guide train driver	0	NIL	NIL	NIL
+13	adequate fencing	0	NIL	NIL	NIL
+13	Monitor track zone surveillance	0	NIL	NIL	NIL
+13	Dispatch train	0	NIL	NIL	NIL
+10	Alert unauthorised access	0	NIL	NIL	NIL
+8	Pilot adversarial drone	1	ACTIVE	BG	BG
+8	Capable adversarial perception model	1	ACTIVE	BG	BG
+8	Train track zone location	1	ACTIVE	BG	BG
+8	Adversarial mission target	1	ACTIVE	BG	BG
+3	Permissible weather conditions	1	ACTIVE	BG	BG
+1	GPS signal	1	ACTIVE	BG	BG
+1	Provide mobile network	1	ACTIVE	BG	BG
+0	Roam train track zone	0	NIL	NIL	NIL
+2	Passing through track zone	0	NIL	NIL	NIL
+10	Passing through track zone	0	NIL	NIL	NIL
+13	Alert police force	0	NIL	NIL	NIL
+11	Dispatch police officers	0	NIL	NIL	NIL
+4	Capture adversarial drone	0	NIL	NIL	NIL
+5	Permissible road traffic	1	ACTIVE	BG	BG
+6	Safe transport of people	0	NIL	NIL	NIL
+4	Secure train track zone	0	NIL	NIL	NIL
+11	Police monitor track zone surveillance	0	NIL	NIL	NIL
+14	Train Schedule Management	1	ACTIVE	BG	BG
+14	Communication with Train Operators	1	ACTIVE	BG	BG
+0	Miss train collision	0	NIL	NIL	NIL
+0	Trigger surveillance alert	0	NIL	NIL	NIL
+10	Detect adversarial drone	0	NIL	NIL	NIL
+
+Interpretation profile
+Function <ALL>
+INPUT: ALL	PRECONDITION: NONE	RESOURCE: ALL	TIME: LATE	CONTROL: PRECISE	
+Function <ALL>
+INPUT: NONE	PRECONDITION: ALL	RESOURCE: ALL	TIME: LATE	CONTROL: PRECISE	
+Function <ALL>
+INPUT: NONE	PRECONDITION: NONE	RESOURCE: NONE	TIME: LATE	CONTROL: PRECISE	
+Function <ALL>
+INPUT: ALL	PRECONDITION: NONE	RESOURCE: ALL	TIME: LATE	CONTROL: PRECISE	
+Function <ALL>
+INPUT: NONE	PRECONDITION: NONE	RESOURCE: ALL	TIME: LATE	CONTROL: PRECISE	
+Function <ALL>
+INPUT: NONE	PRECONDITION: NONE	RESOURCE: ALL	TIME: LATE	CONTROL: PRECISE	
+Function <ALL>
+INPUT: NONE	PRECONDITION: NONE	RESOURCE: ALL	TIME: LATE	CONTROL: PRECISE	
+
+
+
+Summary of FMIlog
+Begin initialisation
+---  MODEL INITIALISATION COMPLETED.
+BEGIN CYCLE 1
+No functions were actived during this cycle.
