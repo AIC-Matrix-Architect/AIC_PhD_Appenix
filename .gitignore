@@ -1,0 +1,9 @@
+# Generated output files from complexity_simulator.py
+complexity_distributions.png
+complexity_animation_normal.gif
+complexity_animation_longtail.gif
+complexity_animation_uniform.gif
+
+# Python
+__pycache__/
+*.pyc
